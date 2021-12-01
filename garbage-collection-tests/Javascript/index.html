@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Garbage Collection</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: #000;
+            display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: space-around;
+            margin: 0;
+        }
+
+        button {
+            border: none;
+            background: #333;
+            color: #999;
+        }
+
+        #spinner {
+            background: #0086ff;
+            height: 10vw;
+            width: 10vw;
+        }
+    </style>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <button id="conservative">Conserve</button>
+
+    <div id="spinner"></div>
+
+    <button id="wasteful">Waste</button>
+</body>
+</html>
